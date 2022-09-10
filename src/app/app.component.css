@@ -1,0 +1,10 @@
+.main {
+  display: grid;
+  grid-template-rows: 2.5fr 5fr;
+  height: 100vh;
+}
+
+.main__img {
+  background-image: url("../assets/images/pattern-bg.png");
+  background-size: cover;
+}

@@ -4,9 +4,12 @@ import { MarkerService } from './services/marker/marker.service';
 import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { MapComponent } from './map/map.component';
+import { ContentComponent } from './content/content.component';
+import { FormComponent } from './form/form.component';
+import { InformationComponent } from './information/information.component';
 
 @NgModule({
-  declarations: [AppComponent, MapComponent],
+  declarations: [AppComponent, MapComponent, ContentComponent, FormComponent, InformationComponent],
   imports: [BrowserModule, HttpClientModule],
   providers: [MarkerService],
   bootstrap: [AppComponent],
