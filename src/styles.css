@@ -7,6 +7,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  letter-spacing: 0.05rem;
 }
 
 :root {
@@ -14,7 +15,9 @@
   font-family: 'Rubik';
 
   --color-v-dark-gray: hsl(0, 0%, 17%);
-  --color-dark-gray: hsl(0, 0%, 59%)
+  --color-dark-gray: hsl(0, 0%, 59%);
+
+  --border-radius: 0.8rem;
 }
 
 app-root {

@@ -39,6 +39,7 @@ export class MapComponent implements OnInit {
     this.map = L.map('map', {
       center: [39.8282, -98.5795],
       zoom: 3,
+      zoomControl: false,
     });
 
     const tiles = L.tileLayer(

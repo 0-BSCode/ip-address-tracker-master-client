@@ -1,0 +1,26 @@
+.form {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  border-radius: var(--border-radius);
+}
+
+.form > * {
+  border: none;
+  padding: 1rem;
+}
+
+.form__input {
+  border-top-left-radius: inherit;
+  border-bottom-left-radius: inherit;
+  font-size: 0.9rem;
+  outline: none;
+}
+
+.form__btn {
+  border-top-right-radius: inherit;
+  border-bottom-right-radius: inherit;
+  background-color: black;
+  background-image: url("../../assets/images/icon-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}

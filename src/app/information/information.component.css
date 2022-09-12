@@ -1,0 +1,8 @@
+.information {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  padding: 1.3rem;
+  border-radius: var(--border-radius);
+}

@@ -6,5 +6,5 @@
 
 .main__img {
   background-image: url("../assets/images/pattern-bg.png");
-  background-size: cover;
+  background-size: contain;
 }

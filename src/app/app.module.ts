@@ -7,9 +7,10 @@ import { MapComponent } from './map/map.component';
 import { ContentComponent } from './content/content.component';
 import { FormComponent } from './form/form.component';
 import { InformationComponent } from './information/information.component';
+import { DetailComponent } from './detail/detail.component';
 
 @NgModule({
-  declarations: [AppComponent, MapComponent, ContentComponent, FormComponent, InformationComponent],
+  declarations: [AppComponent, MapComponent, ContentComponent, FormComponent, InformationComponent, DetailComponent],
   imports: [BrowserModule, HttpClientModule],
   providers: [MarkerService],
   bootstrap: [AppComponent],
