@@ -1,20 +1,19 @@
-import { Component, OnInit, AfterViewInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import * as L from 'leaflet';
 import { MapService } from '../services/map/map.service';
-import { MarkerService } from '../services/marker/marker.service';
 
-const iconRetinaUrl = 'assets/marker-icon-2x.png';
-const iconUrl = 'assets/marker-icon.png';
-const shadowUrl = 'assets/marker-shadow.png';
+// const iconRetinaUrl = 'assets/marker-icon-2x.png';
+const iconRetinaUrl = 'assets/images/icon-location.svg';
+// const iconUrl = 'assets/marker-icon.png';
+const iconUrl = 'assets/images/icon-location.svg';
 const iconDefault = L.icon({
   iconRetinaUrl,
   iconUrl,
-  shadowUrl,
-  iconSize: [25, 41],
+  iconSize: [30, 35],
   iconAnchor: [12, 41],
   popupAnchor: [1, -34],
   tooltipAnchor: [16, -28],
-  shadowSize: [41, 41],
+  shadowSize: [35, 35],
 });
 L.Marker.prototype.options.icon = iconDefault;
 
@@ -24,10 +23,7 @@ L.Marker.prototype.options.icon = iconDefault;
   styleUrls: ['./map.component.css'],
 })
 export class MapComponent implements OnInit {
-  constructor(
-    private markerService: MarkerService,
-    private mapService: MapService
-  ) {}
+  constructor(private mapService: MapService) {}
 
   ngOnInit(): void {}
 

@@ -13,8 +13,4 @@ export class LocationService {
   fetchLocationDetails(ip: string): Observable<Location> {
     return this.httpClient.get<Location>(`${this.url}/${ip}`);
   }
-
-  private log(message: string) {
-    console.log(message);
-  }
 }

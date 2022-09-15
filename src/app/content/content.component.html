@@ -1,5 +1,5 @@
 <div class="content">
   <h1 class="content__header">IP Address Tracker</h1>
-  <app-form></app-form>
-  <app-information></app-information>
+  <app-form (startSearchEvent)="fetchLocationDetails($event)"></app-form>
+  <app-information [locationInfo]="locationDetails"></app-information>
 </div>

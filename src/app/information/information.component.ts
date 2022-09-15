@@ -1,6 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { Location } from 'src/types/location';
-import { LocationService } from '../services/location/location.service';
 
 @Component({
   selector: 'app-information',
@@ -8,17 +7,9 @@ import { LocationService } from '../services/location/location.service';
   styleUrls: ['./information.component.css'],
 })
 export class InformationComponent implements OnInit {
-  locationInfo?: Location;
+  @Input() locationInfo?: Location;
 
-  constructor(private locationService: LocationService) {}
+  constructor() {}
 
-  ngOnInit(): void {
-    this.fetchLocation('104.28.252.29');
-  }
-
-  fetchLocation(ip: string) {
-    this.locationService
-      .fetchLocationDetails(ip)
-      .subscribe((response) => (this.locationInfo = response));
-  }
+  ngOnInit(): void {}
 }

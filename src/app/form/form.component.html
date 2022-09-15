@@ -1,9 +1,10 @@
-<form class="form">
+<form #form="ngForm" class="form">
   <input
     class="form__input"
     type="text"
     placeholder="Enter IP address"
-    value="192.212.174.101"
+    name="ip-address"
+    [(ngModel)]="ipAddress"
   />
-  <button class="form__btn"></button>
+  <button class="form__btn" (click)="startSearch()" type="submit"></button>
 </form>
