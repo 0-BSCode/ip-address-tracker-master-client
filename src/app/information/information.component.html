@@ -1,6 +1,16 @@
-<div class="information">
-  <app-detail tag="IP ADDRESS" info="192.212.174.101"></app-detail>
+<div class="information" *ngIf="locationInfo">
+  <app-detail tag="IP ADDRESS" info="{{ this.locationInfo.ip }}"></app-detail>
+  <app-detail
+    tag="LOCATION"
+    info="{{ this.locationInfo.country_name }}"
+  ></app-detail>
+  <app-detail
+    tag="TIMEZONE"
+    info="{{ this.locationInfo.localtime }}"
+  ></app-detail>
+  <app-detail tag="ISP" info="{{ this.locationInfo.region }}"></app-detail>
+  <!-- <app-detail tag="IP ADDRESS" info="192.212.174.101"></app-detail>
   <app-detail tag="LOCATION" info="Brooklyn, NY 10001"></app-detail>
   <app-detail tag="TIMEZONE" info="UTC-05:00"></app-detail>
-  <app-detail tag="ISP" info="SpaceX Starlink"></app-detail>
+  <app-detail tag="ISP" info="SpaceX Starlink"></app-detail> -->
 </div>
