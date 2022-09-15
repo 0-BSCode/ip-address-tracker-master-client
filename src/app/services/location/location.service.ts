@@ -7,7 +7,8 @@ import { Location } from 'src/types/location';
   providedIn: 'root',
 })
 export class LocationService {
-  private url: string = 'http://localhost:4000/getLocationDetails';
+  private url: string =
+    'https://ip-address-tracker-server-ye6pp0mft-bry-cmd.vercel.app/getLocationDetails';
   constructor(private httpClient: HttpClient) {}
 
   fetchLocationDetails(ip: string): Observable<Location> {
