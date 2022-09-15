@@ -8,3 +8,9 @@
   background-image: url("../assets/images/pattern-bg.png");
   background-size: contain;
 }
+
+@media screen and (min-width: 1200px) {
+  .main {
+    grid-template-rows: 3fr 5fr;
+  }
+}

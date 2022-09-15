@@ -12,7 +12,7 @@ export class MapService {
   initMap(elementId: string): void {
     this.map = L.map(elementId, {
       center: [39.8282, -98.5795],
-      zoom: 5,
+      zoom: 1,
       zoomControl: false,
     });
 
@@ -34,7 +34,7 @@ export class MapService {
     if (this.previousMarker) this.map.removeLayer(this.previousMarker);
     this.previousMarker = marker;
     marker.addTo(this.map);
-    this.panTo(lat, lon);
+    this.panTo(lat + 1.5, lon);
   }
 
   private panTo(lat: number, lon: number) {

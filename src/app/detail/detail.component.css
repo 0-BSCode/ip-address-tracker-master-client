@@ -13,5 +13,11 @@
 
 .detail__info {
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: 500;
+}
+
+@media screen and (min-width: 768px) {
+  .detail {
+    text-align: left;
+  }
 }

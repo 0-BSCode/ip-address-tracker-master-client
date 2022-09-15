@@ -23,4 +23,17 @@
   background-image: url("../../assets/images/icon-arrow.svg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
+  background-size: 0.6rem;
+}
+
+.form__btn:hover {
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .form {
+    width: 75%;
+    margin-inline: auto;
+    grid-template-columns: 6fr 1fr;
+  }
 }
